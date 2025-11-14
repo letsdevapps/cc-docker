@@ -1,0 +1,25 @@
+
+# Diretórios gerados por compilação
+bin/
+target/
+build/
+dist/
+obj/
+
+# Arquivos de configuração específicos do IDE (se houver)
+.vscode/
+.idea/
+.project/
+
+# Arquivos de dependência (gerados automaticamente)
+*.d
+
+# Arquivos de compilação temporários do C++
+*.o
+*.a
+*.so
+
+# Arquivos específicos do sistema
+.DS_Store
+Thumbs.db
+
