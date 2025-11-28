@@ -10,19 +10,19 @@ OBJ_DIR = obj
 BIN_DIR = bin
 
 # Arquivos de saída
-CC_EXEC = $(BIN_DIR)/cc-hello
-#CXX_EXEC = $(BIN_DIR)/cpp-hello
+CC_EXEC = $(BIN_DIR)/cc-docker
+#CXX_EXEC = $(BIN_DIR)/cpp-docker
 
 # Regras
 all: $(CC_EXEC) $(CXX_EXEC)
 
 # Compilação do programa C
-$(CC_EXEC): $(SRC_DIR)/cc-hello.c | $(BIN_DIR)
-	$(CC) $(CFLAGS) -o $(CC_EXEC) $(SRC_DIR)/cc-hello.c
+$(CC_EXEC): $(SRC_DIR)/cc-docker.c | $(BIN_DIR)
+	$(CC) $(CFLAGS) -o $(CC_EXEC) $(SRC_DIR)/cc-docker.c
 
 # Compilação do programa C++
-#$(CXX_EXEC): $(SRC_DIR)/cpp-hello.cpp | $(BIN_DIR)
-#	$(CXX) $(CXXFLAGS) -o $(CXX_EXEC) $(SRC_DIR)/cpp-hello.cpp
+#$(CXX_EXEC): $(SRC_DIR)/cpp-docker.cpp | $(BIN_DIR)
+#	$(CXX) $(CXXFLAGS) -o $(CXX_EXEC) $(SRC_DIR)/cpp-docker.cpp
 
 # Limpar arquivos gerados
 clean:

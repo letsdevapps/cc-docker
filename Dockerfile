@@ -19,5 +19,5 @@ RUN mkdir -p bin && make
 
 # Comando para rodar o programa C ou C++ após a construção
 # Você pode trocar para "cpp-hello" se preferir o C++
-CMD ["./bin/cc-hello", ""]
+CMD ["./bin/cc-docker", ""]
 
