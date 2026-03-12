@@ -1,0 +1,21 @@
+name: Build CI C++ Cpp Docker
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t cp-docker .
+
+      - name: Run application (CI validation)
+        run: docker run --rm cp-docker
